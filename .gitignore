@@ -13,3 +13,4 @@ storage/
 .env
 
 public/upload/
+.idea/
