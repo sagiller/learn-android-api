@@ -71,6 +71,9 @@ $app->group(['prefix' => 'api/v1','namespace' => 'App\Http\Controllers'], functi
     $app->post('user/login','UserController@login');
     $app->post('user/register','UserController@register');
     $app->post('user/getRegisterSms','UserController@getRegisterSms');
+
+    $app->get('webpagecategory/{categoryId}/webpages','WebPageController@webpages');
+    $app->get('webpagecategory/modules','WebPageCategoryController@modules');
 });
 
 
