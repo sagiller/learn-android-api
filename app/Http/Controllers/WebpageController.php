@@ -9,6 +9,7 @@ class WebpageController extends RestController {
     public function websites($categoryId)
     {
         $websites  = Webpage::where('category_id',$categoryId)->with('category','icon')->paginate(15);
+        
         return $this->apiPagedSuccess($websites);
     }
 
