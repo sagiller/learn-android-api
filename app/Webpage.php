@@ -17,7 +17,7 @@ class Webpage extends Model {
 
     public function category()
     {
-        return $this->belongsTo('App\WebPageCategory','category_id');
+        return $this->belongsTo('App\WebpageCategory','category_id');
     }
 
 }
